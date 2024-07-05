@@ -72,7 +72,6 @@ public class ProductController {
         return "shop-detail";
     }
 
-
     @GetMapping("/lower-price")
     public String filterLowerPrice(Model model) {
         List<CategoryDto> categories = categoryService.getCategoriesAndSize();
